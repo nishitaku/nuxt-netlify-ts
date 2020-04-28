@@ -10,6 +10,7 @@ export const handler: Handler = (
   context: Context,
   callback: Callback
 ) => {
+  console.log(`hello invoked`)
   const params = event.queryStringParameters
   const response: HelloResponse = {
     statusCode: 200,
