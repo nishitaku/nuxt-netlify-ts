@@ -1,22 +1,19 @@
-# nuxt-netlify-ts
+# Nuxt.js + Netlify Functions を TypeScript で構築する
 
-> My super Nuxt.js project
-
-## Build Setup
+## セットアップ
 
 ```bash
-# install dependencies
+# インストール
 $ yarn install
 
-# serve with hot reload at localhost:3000
+# Nuxt.js開発サーバ起動(localhost:3000)
 $ yarn dev
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+# netlify-lambda開発サーバ起動(localhost:9000)
+$ yarn dev:functions
 
-# generate static project
-$ yarn generate
+# ビルド
+$ yarn build
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
