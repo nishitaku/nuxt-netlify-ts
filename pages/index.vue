@@ -73,7 +73,7 @@ export default {
   },
   async mounted() {
     try {
-      const response = await this.$axios.$get('./.netlify/functions/hello')
+      const response = await this.$axios.$get('.netlify/functions/hello')
       console.log(`respones=${JSON.stringify(response)}`)
     } catch (err) {
       console.error(err)
