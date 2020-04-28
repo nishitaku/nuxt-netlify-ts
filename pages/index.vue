@@ -70,6 +70,14 @@ export default {
   components: {
     Logo,
     VuetifyLogo
+  },
+  async mounted() {
+    try {
+      const response = await this.$axios.$get('./.netlify/functions/hello')
+      console.log(`respones=${JSON.stringify(response)}`)
+    } catch (err) {
+      console.error(err)
+    }
   }
 }
 </script>
