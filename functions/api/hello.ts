@@ -14,7 +14,7 @@ export const handler: Handler = (
   const response: HelloResponse = {
     statusCode: 200,
     body: JSON.stringify({
-      msg: `Hello world ${Math.floor(Math.random() * 10)}`,
+      msg: `Hello world`,
       requestId: context.awsRequestId || 'dummy',
       params
     })
